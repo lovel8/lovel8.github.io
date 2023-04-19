@@ -11,7 +11,7 @@ github_repo: "https://lovel8.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "察者智，不察者迷。"
+sidebar-about-description: "察者智，不察者迷！"
 sidebar-avatar: /img/about-BY-gentle.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
