@@ -1,13 +1,13 @@
 # Site settings
-title: gankai Blog
-SEOTitle: gankai博客 | gankai Blog
+title: lovel8 Blog
+SEOTitle: lovel8博客 | lovel8 Blog
 header-img: img/homePage.jpg
-email: gk1424301572@outlook.com
-description: "Things that can make you miserable will surely make you strong, grow up, and must experience what others can't!"
-keyword: "Java, JavaScript, 博客, GitHubGanKai, vue, web, blog, js"
-url: "http://gankai.online/."          # your host, for absolute URL
+email: lovel888@hotmail.com
+description: "自知者明，自胜者强！"
+keyword: "Web3, Crypto, 博客, lovel8, blog, rust, go, js"
+url: "https://lovel8.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/GitHubGanKai/blog.git" # you code repository
+github_repo: "https://lovel8.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -18,12 +18,12 @@ sidebar-avatar: /img/about-BY-gentle.png      # use absolute URL, seeing it's us
 
 # SNS settings
 RSS: false
-weibo_username:     6131084360
-zhihu_username:     ren-qing-zi-ji-9
-github_username:    GitHubGanKai
-# facebook_username:  baiying.qiu.7
-jianshu_username:   4365773d2dd5
-#twitter_username:   GitHubGanKai
+weibo_username:     lovel8
+# zhihu_username:   lovel8  
+github_username:    lovel8
+# facebook_username:lovel8  
+# jianshu_username: lovel8  
+# twitter_username: lovel8  
 
 
 
@@ -58,7 +58,7 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-# disqus_username: GitHubGanKai
+# disqus_username: lovel8
 
 # Gitalk
 gitalk:
@@ -66,8 +66,8 @@ gitalk:
   clientID: d2223ef21ecae706fcb4                            #生成的clientID
   clientSecret: 8fecef465f9f3dc81f11bd98ec59d4644eb9282a    #生成的clientSecret
   repo: blog    #仓库名称 
-  owner: GitHubGanKai    #github用户名
-  admin: GitHubGanKai
+  owner: lovel8    #github用户名
+  admin: lovel8
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
@@ -100,17 +100,8 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
-    },{
-        title: "简书·GK",
-        href: "http://www.jianshu.com/u/4365773d2dd5"
-    },{
-        title: "Apple",
-        href: "https://apple.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
+        title: "lovel8",
+        href: "https://lovel8.github.io"
     }
 ]
 
