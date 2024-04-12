@@ -1,41 +1,37 @@
 
-## 使用
+# 使用
 
 * 开始
-	* [环境](#环境)
-	* [开始](#开始)
-	* [撰写博文](#撰写博文)
+  * [环境](#环境)
+  * [开始](#开始)
+  * [撰写博文](#撰写博文)
 * 组件
-	* [侧边栏](#侧边栏)
-	* [迷你关于我](#mini-about-me)
-	* [推荐标签](#featured-tags)
-	* [好友链接](#friends)
-	* [HTML5 演示文档布局](#keynote-layout)
+  * [侧边栏](#侧边栏)
+  * [迷你关于我](#mini-about-me)
+  * [推荐标签](#featured-tags)
+  * [好友链接](#friends)
+  * [HTML5 演示文档布局](#keynote-layout)
 * 评论与 Google/Baidu Analytics
-	* [评论](#comment)
-	* [网站分析](#analytics)
+  * [评论](#comment)
+  * [网站分析](#analytics)
 * 高级部分
-	* [自定义](#customization)
-	* [标题底图](#header-image)
-	* [搜索展示标题-头文件](#seo-title)
+  * [自定义](#customization)
+  * [标题底图](#header-image)
+  * [搜索展示标题-头文件](#seo-title)
 
-
-
-### 环境
+## 环境
 
 如果你安装了 [jekyll](http://jekyllcn.com/)，那你只需要在命令行输入`jekyll serve` 或 `jekyll s`就能在本地浏览器中输入`http://127.0.0.1:4000/`预览主题，对主题的修改也能实时展示（需要强刷浏览器）。
-
-
 
 ### 开始
 
 你可以通用修改 `_config.yml`文件来轻松的开始搭建自己的博客:
 
-```
+```sh
 # Site settings
 title: BY Blog                    # 你的博客网站标题
-SEOTitle: 甘凯的博客 | GK Blog		# SEO 标题
-description: "Hey"	   	   # 随便说点，描述一下
+SEOTitle: 甘凯的博客 | GK Blog  # SEO 标题
+description: "Hey"        # 随便说点，描述一下
 
 # SNS settings      
 github_username: GitHubGanKai     # 你的github账号
@@ -53,7 +49,7 @@ Jekyll官方网站还有很多的参数可以调，比如设置文章的链接�
 
 yaml 头文件长这样:
 
-```
+```sh
 layout:     post
 title:      最全的Git入门操作使用详解
 subtitle:   最全的Git入门操作使用详解 进阶
@@ -72,11 +68,11 @@ tags:
 ### 侧边栏
 
 看右边:
-![](https://raw.githubusercontent.com/GitHubGanKai/blog/master/img/readme-side.png)
+![readme](https://raw.githubusercontent.com/GitHubGanKai/blog/master/img/readme-side.png)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 
-```
+```sh
 # Sidebar settings
 sidebar: true  #添加侧边栏
 sidebar-about-description: "简单的描述一下你自己"
@@ -84,7 +80,6 @@ sidebar-avatar: /img/avatar-by.jpg     #你的大头贴，请使用绝对地址.
 ```
 
 侧边栏是响应式布局的，当屏幕尺寸小于992px的时候，侧边栏就会移动到底部。具体请见bootstrap栅格系统 <http://v3.bootcss.com/css/>
-
 
 ### Mini About Me
 
@@ -95,7 +90,7 @@ Mini-About-Me 这个模块将在你的头像下面，展示你所有的社交账
 看到这个网站 [Medium](http://medium.com) 的推荐标签非常的炫酷，所以我将他加了进来。
 这个模块现在是独立的，可以呈现在所有页面，包括主页和发表的每一篇文章标题的头上。
 
-```
+```sh
 # Featured Tags
 featured-tags: true  
 featured-condition-size: 1     # A tag will be featured if the size of it is more than this condition value
@@ -109,25 +104,25 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 
 在下面输入的社交账号，没有的添加的不会显示在侧边框中。新加入了[简书](https:/www.jianshu.com)链接, <https://www.jianshu.com/u/4365773d2dd5>
 
-	# SNS settings
-	RSS: false
-	jianshu_username: 	jianshu_id
-	zhihu_username:     username
-	facebook_username:  username
-	github_username:    username
-	# weibo_username:   username
+# SNS settings
 
+ RSS: false
+ jianshu_username:  jianshu_id
+ zhihu_username:     username
+ facebook_username:  username
+ github_username:    username
 
+# weibo_username:   username
 
-![](http://ww4.sinaimg.cn/large/006tKfTcgy1fgrgbgf77aj308i02v748.jpg)
+![username](http://ww4.sinaimg.cn/large/006tKfTcgy1fgrgbgf77aj308i02v748.jpg)
 
-### Friends
+## Friends
 
 好友链接部分。这会在全部页面显示。
 
 设置是在 `_config.yml`文件里面的`Friends`那块，自己加吧。
 
-```
+```sh
 # Friends
 friends: [
     {
@@ -141,18 +136,17 @@ friends: [
 ]
 ```
 
-
 ### Keynote Layout
 
 HTML5幻灯片的排版：
 
-![](https://camo.githubusercontent.com/f30347a118171820b46befdf77e7b7c53a5641a9/687474703a2f2f6875616e677875616e2e6d652f696d672f626c6f672d6b65796e6f74652e6a7067)
+![幻灯片](https://camo.githubusercontent.com/f30347a118171820b46befdf77e7b7c53a5641a9/687474703a2f2f6875616e677875616e2e6d652f696d672f626c6f672d6b65796e6f74652e6a7067)
 
 这部分是用于占用html格式的幻灯片的，一般用到的是 Reveal.js, Impress.js, Slides, Prezi 等等.我认为一个现代化的博客怎么能少了放html幻灯的功能呢~
 
 其主要原理是添加一个 `iframe`，在里面加入外部链接。你可以直接写到头文件里面去，详情请见下面的yaml头文件的写法。
 
-```
+```sh
 ---
 layout:     keynote
 iframe:     "http://huangxuan.me/js-module-7day/"
@@ -160,7 +154,6 @@ iframe:     "http://huangxuan.me/js-module-7day/"
 ```
 
 iframe在不同的设备中，将会自动的调整大小。保留内边距是为了让手机用户可以向下滑动，以及添加更多的内容。
-
 
 ### Comment
 
@@ -180,7 +173,7 @@ iframe在不同的设备中，将会自动的调整大小。保留内边距是�
 
 **其次**，你只需要在下面的 yaml 头文件中设置一下就可以了。
 
-```
+```sh
 # 评论系统
 # Disqus（https://disqus.com/）
 disqus_username: qiubaiying
@@ -196,18 +189,17 @@ disqus_username: qiubaiying
 
 参考[qiubaiying](https://github.com/qiubaiying/qiubaiying.github.io)的这篇文章：[《为博客添加 Gitalk 评论插件》](http://qiubaiying.top/2017/12/19/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0-Gitalk-%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/)
 
-
 ### Analytics
 
 网站分析，现在支持百度统计和Google Analytics。需要去官方网站注册一下，然后将返回的code贴在下面：
 
-```
+```sh
 # Baidu Analytics
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # 你用Google账号去注册一个就会给你一个这样的id
-ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
+ga_domain: huangxuan.me   # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
 ```
 
 ### Customization
@@ -250,14 +242,12 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
 
 参考文档：[using jekyll with pages](https://help.github.com/articles/using-jekyll-with-pages/) & [Upgrading from 2.x to 3.x](http://jekyllrb.com/docs/upgrading/2-to-3/)
 
-
 ## 致谢
 
 1. 这个模板是从这里 [geekskai](https://github.com/geekskai/blog) fork 的, 感谢这个作者。
 2. 感谢 Jekyll、Github Pages 和 Bootstrap!
 3. 博客的搭建教程修改自 [qiubaiying](https://github.com/qiubaiying/qiubaiying.github.io)
 更为详细的教程戳这 [《利用 GitHub Pages 快速搭建个人博客》](http://www.jianshu.com/p/e68fba58f75c) 或 [wiki](https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B)
-
 
 ## License
 
